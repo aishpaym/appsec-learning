@@ -1,0 +1,86 @@
+# Cybersecurity Lab: Network Monitoring, Password Auditing and Executable Analysis
+
+## Overview
+
+This project demonstrates practical cybersecurity concepts in a controlled virtual lab environment. The objective was to analyze network activity, evaluate password strength, observe system behavior under simulated malicious conditions, and inspect executable file structures.
+
+All activities were conducted in an isolated virtual machine for educational and defensive security purposes.
+
+## Tools Used
+
+* TCPView
+* L0phtCrack
+* PEiD
+* Windows 10 Virtual Machine
+
+## Objectives
+
+* Monitor active network connections and processes
+* Analyze password strength through offline password auditing
+* Observe the impact of unauthorized system modifications in a safe environment
+* Examine executable file structures and metadata
+* Document security observations and recommendations
+
+## Lab Activities
+
+### 1. Network Analysis using TCPView
+
+Observed active network connections and identified:
+
+* Process names
+* Local and remote addresses
+* Port usage
+* Connection states
+
+#### Key Findings
+
+* Most network traffic utilized HTTPS (Port 443)
+* Standard Windows services operated on expected ports
+* No suspicious connections were identified
+
+### 2. Password Auditing using L0phtCrack
+
+Performed password strength assessment using locally generated password hashes.
+
+#### Key Findings
+
+* Weak passwords were recovered quickly through dictionary attacks
+* Strong passwords resisted cracking attempts
+* Password complexity significantly increased security
+
+#### Recommendations
+
+* Minimum 12-character passwords
+* Mixed character sets
+* Strong password policies
+
+### 3. System Behavior Observation
+
+Simulated disruptive system actions within an isolated virtual machine to understand how malicious software can impact usability.
+
+#### Observations
+
+* Application availability was affected
+* User interaction became difficult
+* System functionality degraded
+
+### 4. Executable Analysis using PEiD
+
+Analyzed executable structure and metadata.
+
+#### Findings
+
+* Standard executable sections identified
+* No significant packing or obfuscation detected
+* PE header inspection provided insight into executable composition
+
+## Security Lessons Learned
+
+* Continuous monitoring improves endpoint visibility
+* Weak passwords remain a significant security risk
+* User experience disruptions can indicate malicious activity
+* Executable analysis helps identify potentially suspicious files
+
+## Ethical Statement
+
+All testing was performed in a controlled virtual environment for educational purposes only. No production systems, third-party systems, or unauthorized targets were involved.
