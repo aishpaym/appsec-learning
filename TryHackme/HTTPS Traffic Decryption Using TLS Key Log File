@@ -1,0 +1,44 @@
+Objective
+
+Understand how HTTPS traffic can be decrypted in Wireshark when TLS session keys are available.
+
+Tools Used
+
+Wireshark
+Chromium
+TLS Key Log File
+
+Steps Performed
+
+Opened randy-chromium.pcapng
+Configured Wireshark:
+Edit → Preferences
+Protocols → TLS
+Added ssl-key.log
+Reloaded the capture
+TLS packets were decrypted into HTTP/2 traffic
+Searched for /login
+Located the HTTP/2 request
+Examined decrypted headers
+Retrieved the required information
+
+Key Concepts Learned
+
+HTTPS traffic is normally encrypted.
+TLS session keys can be used to decrypt captured traffic.
+Wireshark supports TLS decryption through SSL Key Log Files.
+HTTP/2 headers become visible after successful decryption.
+Security analysts often inspect decrypted traffic during incident investigations.
+
+Challenges Faced
+
+Wireshark initially displayed a blank screen after loading the key log.
+Resolved by reopening/reloading the capture.
+
+Skills Demonstrated
+
+Packet Analysis
+TLS Decryption
+Wireshark Usage
+HTTP/2 Traffic Analysis
+Incident Investigation Fundamentals
