@@ -50,8 +50,5 @@ Use NULL values to avoid data type mismatch errors.
 Burp Repeater is useful for testing SQL injection payloads interactively.
 Lab Status
 
+✅ Successfully Completed
 
-
-📒 Notes for Your Notebook
-SQL Injection – UNION Attack (Finding Number of Columns)
-Purpose
