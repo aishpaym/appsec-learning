@@ -50,5 +50,5 @@ Use NULL values to avoid data type mismatch errors.
 Burp Repeater is useful for testing SQL injection payloads interactively.
 Lab Status
 
-✅ Successfully Completed
+
 
