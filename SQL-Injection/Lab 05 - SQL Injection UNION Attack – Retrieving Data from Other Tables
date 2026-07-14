@@ -1,0 +1,34 @@
+Objective
+
+Exploit a UNION-based SQL Injection vulnerability to retrieve usernames and passwords from the users table and log in as the administrator.
+
+Tools Used
+
+Burp Suite Community Edition
+Burp Repeater
+PortSwigger Web Security Academy
+
+Methodology
+
+Intercepted the vulnerable request.
+Sent the request to Burp Repeater.
+Determined the number of columns using ORDER BY.
+Confirmed that the query returned 2 columns.
+Verified that both columns accepted string data using UNION SELECT with 'a'.
+Retrieved usernames and passwords from the users table using a UNION query.
+Logged in as the administrator using the retrieved credentials.
+
+Skills Practiced
+
+SQL Injection
+UNION-based SQL Injection
+Column Enumeration
+String Data Type Identification
+Data Extraction
+Burp Suite Repeater
+
+Key Learning
+
+A successful UNION attack requires the same number of columns as the original query.
+Compatible data types are required for each selected column.
+Once string-compatible columns are identified, text-based data from other tables can be retrieved during authorized security testing.
