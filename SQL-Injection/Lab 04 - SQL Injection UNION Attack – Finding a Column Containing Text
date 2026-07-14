@@ -1,0 +1,26 @@
+Description
+
+This lab demonstrates how to identify a column that supports string data using a SQL Injection UNION attack. After determining the correct number of columns, each column is tested individually by inserting a string while keeping the remaining columns as NULL.
+
+Methodology
+Determined the correct number of columns.
+Used UNION SELECT with NULL values.
+Replaced one NULL at a time with a string ('a').
+Observed the application's response to identify the column that displayed the injected string.
+Replaced the test string with the lab-provided value to successfully solve the lab.
+Example Payloads
+' UNION SELECT 'a',NULL,NULL,NULL,NULL,NULL--
+' UNION SELECT NULL,'a',NULL,NULL,NULL,NULL--
+' UNION SELECT NULL,NULL,'a',NULL,NULL,NULL--
+Skills Practiced
+SQL Injection
+UNION-based SQL Injection
+Column Enumeration
+Data Type Identification
+Burp Suite Repeater
+Manual Web Application Testing
+Key Takeaways
+UNION queries must have the same number of columns.
+NULL values simplify data type matching.
+Only columns compatible with string data can display text-based information.
+Identifying a text-compatible column is an essential step before extracting sensitive data during authorized penetration testing.
