@@ -1,0 +1,41 @@
+Lab Objective
+
+This lab demonstrates how to retrieve multiple values from a database when the original query returns only a single text column. The attack uses a UNION-based SQL Injection combined with string concatenation to extract usernames and passwords from the users table.
+
+Skills Practiced
+
+UNION-based SQL Injection
+Determining the number of returned columns
+Identifying text-compatible columns
+String concatenation
+Retrieving data from another table
+Understanding database-specific concatenation syntax
+
+Methodology
+
+Intercepted the product category request using Burp Suite Repeater.
+Determined the number of columns using the ORDER BY technique.
+Identified the column that accepts string data using NULL and a string value.
+Used a UNION SELECT statement to retrieve data from the users table.
+Combined the username and password values using string concatenation.
+Retrieved the administrator credentials.
+Logged in as the administrator to successfully solve the lab.
+
+Key Concepts Learned
+
+A UNION SELECT statement must return the same number of columns as the original query.
+When only one output column is available, multiple values can be combined using string concatenation.
+Different database management systems use different concatenation syntax.
+A separator (such as ~) improves readability of concatenated values.
+
+Tools Used
+
+Burp Suite Community Edition
+PortSwigger Web Security Academy
+Google Chrome
+Outcome
+Successfully exploited a UNION-based SQL Injection vulnerability.
+Retrieved multiple values within a single output column.
+Logged in as the administrator.
+Successfully completed the PortSwigger lab.
+
