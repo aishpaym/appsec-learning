@@ -1,0 +1,46 @@
+Objective
+
+Identify a SQL injection vulnerability in the product category filter and retrieve the database version using a UNION-based SQL Injection attack.
+
+Skills Practiced
+SQL Injection Detection
+UNION-Based SQL Injection
+Burp Suite Repeater
+Identifying Number of Columns
+Finding Text-Compatible Columns
+Retrieving Database Version
+Methodology
+Step 1
+
+Intercepted the request using Burp Suite Repeater.
+
+Step 2
+
+Confirmed SQL injection by modifying the vulnerable parameter.
+
+Step 3
+
+Determined the number of columns returned by the query.
+
+Step 4
+
+Identified which columns accepted text values.
+
+Step 5
+
+Retrieved the database version using a UNION SELECT query.
+
+Concepts Learned
+UNION SQL Injection
+SQL Comment Syntax
+Database Version Enumeration
+Text-Compatible Columns
+Manual Web Application Testing
+Tools Used
+Burp Suite Community Edition
+PortSwigger Web Security Academy
+Google Chrome
+Outcome
+Successfully identified the SQL injection vulnerability.
+Retrieved the database version.
+Understood the process of UNION-based SQL Injection.
