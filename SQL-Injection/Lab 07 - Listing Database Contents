@@ -1,0 +1,56 @@
+Objective
+
+Enumerate the database schema and retrieve application user credentials using UNION SQL Injection.
+
+Skills Practiced
+Database Enumeration
+Information Schema Enumeration
+Identifying Tables
+Identifying Columns
+Credential Extraction
+Burp Suite Repeater
+Methodology
+Step 1
+
+Verified the SQL injection vulnerability.
+
+Step 2
+
+Enumerated available database tables.
+
+Step 3
+
+Identified the application's user table.
+
+Step 4
+
+Enumerated the columns of the user table.
+
+Step 5
+
+Retrieved user credentials.
+
+Step 6
+
+Authenticated using the administrator account.
+
+Concepts Learned
+Database Metadata
+Information Schema
+Table Enumeration
+Column Enumeration
+Credential Retrieval
+SQL Injection Workflow
+Tools Used
+Burp Suite Community Edition
+PortSwigger Web Security Academy
+Chrome Browser
+Outcome
+Successfully enumerated database objects.
+Retrieved application credentials.
+Completed the lab by authenticating as the administrator.
+Key Takeaways
+Learned how attackers leverage UNION-based SQL Injection to extract information from databases.
+Practiced database schema enumeration using metadata.
+Understood the importance of parameterized queries and input validation to prevent SQL Injection.
+Improved hands-on experience with Burp Suite for manual web application security testing.
