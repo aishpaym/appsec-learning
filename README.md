@@ -1,31 +1,96 @@
-# Application Security Learning Portfolio
+# 🛡️ Application Security Learning Portfolio
 
-This repository documents my hands-on journey into Application Security through practical labs, vulnerability analysis, and OWASP Top 10 learning.
+Welcome to my Application Security learning repository!
 
-## Skills Covered
+This repository documents my hands-on journey from **Quality Assurance (5+ years)** to **Application Security**, featuring practical labs, vulnerability analysis, security notes, Python scripting, and OWASP Top 10 concepts.
 
-- SQL Injection
+## 🎯 Learning Objectives
+
+- Build practical Application Security skills
+- Learn Web Application Penetration Testing
+- Master Burp Suite for vulnerability assessment
+- Understand the OWASP Top 10 through hands-on labs
+- Develop Python scripting skills for security automation
+- Document my learning with real-world lab write-ups
+
+---
+
+## 🛠️ Skills & Topics
+
+- SQL Injection (SQLi)
 - Cross-Site Scripting (XSS)
 - Authentication Vulnerabilities
-- Access Control Issues
+- Access Control
 - Cross-Site Request Forgery (CSRF)
+- Security Misconfigurations
 - Burp Suite
 - OWASP Top 10
+- Python for Security Automation
+- Web Application Testing
 
-## Lab Progress
+---
 
-| Topic | Labs Completed |
-|---------|---------|
-| SQL Injection | 1 |
-| XSS | 0 |
-| Authentication | 0 |
-| Access Control | 0 |
+## 📊 Lab Progress
 
-## Tools
+| Topic | Labs Completed | Status |
+|--------|---------------:|:------:|
+| SQL Injection | 2 | ✅ |
+| Cross-Site Scripting (XSS) | 0 | ⏳ |
+| Authentication | 0 | ⏳ |
+| Access Control | 0 | ⏳ |
+| CSRF | 0 | ⏳ |
+| Other OWASP Labs | In Progress | 🚧 |
 
-- Burp Suite
+---
+
+## 📂 Repository Structure
+
+```text
+appsec-learning/
+│
+├── SQL-Injection/
+├── TryHackMe/
+├── Python/
+├── Windows-Security-Lab-Analysis/
+└── README.md
+```
+
+---
+
+## 🔧 Tools & Platforms
+
+- Burp Suite Community Edition
 - PortSwigger Web Security Academy
+- TryHackMe
+- Python
+- Git & GitHub
+- Visual Studio Code
 
-## Goal
+---
 
-Build practical Application Security skills and document hands-on learning through real-world web security labs.
+## 🚀 Current Learning Roadmap
+
+- Complete SQL Injection labs
+- Learn Cross-Site Scripting (XSS)
+- Practice Authentication vulnerabilities
+- Learn Access Control vulnerabilities
+- Complete OWASP Top 10 labs
+- Build Python security automation scripts
+- Complete TryHackMe learning paths
+- Build a professional Application Security portfolio
+
+---
+
+## 🎯 Goal
+
+Build a strong portfolio demonstrating practical Application Security skills through:
+
+- Hands-on PortSwigger labs
+- Security testing documentation
+- Python automation projects
+- TryHackMe write-ups
+- Continuous learning and real-world practice
+
+---
+
+⭐ This repository is continuously updated as I progress through my Application Security learning journey.
