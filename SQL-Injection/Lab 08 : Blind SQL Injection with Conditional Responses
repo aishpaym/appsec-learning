@@ -1,0 +1,45 @@
+# Lab: Blind SQL Injection with Conditional Responses
+
+## Platform
+PortSwigger Web Security Academy
+
+## Objective
+To understand and identify a blind SQL injection vulnerability by analyzing differences in the application's responses when injected conditions evaluate as true or false.
+
+## Tools Used
+- Burp Suite
+- Burp Suite Repeater
+- PortSwigger Web Security Academy
+- Web Browser
+
+## Concepts Practiced
+- Blind SQL Injection
+- Boolean-based SQL Injection
+- Conditional Responses
+- HTTP Request Interception
+- Request Modification
+- Response Analysis
+
+## Approach
+1. Intercepted the application's request using Burp Suite.
+2. Identified the input parameter used by the application.
+3. Sent the request to Burp Suite Repeater.
+4. Modified the input to test different conditional statements.
+5. Compared the application's responses to determine whether a condition evaluated as true or false.
+6. Used the response behavior to understand how information could be inferred without direct database output.
+
+## Key Learning
+In blind SQL injection, the application does not directly display database errors or query results. Instead, the tester analyzes changes in the application's behavior or response to infer whether an injected condition is true or false.
+
+## Security Mitigations
+- Use parameterized queries or prepared statements.
+- Validate input on the server side.
+- Apply the principle of least privilege to database accounts.
+- Avoid exposing detailed database errors to users.
+- Use secure coding practices and regular security testing.
+
+## Outcome
+Successfully completed the authorized PortSwigger Web Security Academy lab and gained hands-on experience using Burp Suite Repeater to analyze conditional application responses.
+
+## Disclaimer
+This exercise was completed only in an authorized training environment for educational purposes.
